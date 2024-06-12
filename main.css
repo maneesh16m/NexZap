@@ -1,3 +1,5 @@
+/* Existing styles in main.css */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,9 +17,48 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+/* Existing styles */
+
+/* Add this new style for full screen sections */
+.full-screen-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.home-content, .services-content, .about-content {
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 .bouncing-blob {
@@ -80,36 +121,122 @@ body {
   height: 100%;
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.navbar {
+  position: fixed;
+  top: 0;
   width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
 }
 
-.hero h2 {
-  font-size: 70px;
-  max-width: 800px;
-  line-height: 1;
-  text-align: center;
+.navbar-container {
+  display: flex;
+  justify-content: flex-end; /* Ensure consistent alignment */
+  align-items: center;
+  padding: 25px 40px; /* Adjust padding if needed */
+}
+
+
+.nav-link {
+  color: #021123;
+  text-decoration: none;
+  font-size: 19px;
   font-weight: bold;
-  text-transform: capitalize;
+  margin-left: 35px;
+}
+
+.nav-link:first-child {
+  margin-left: 0;
+}
+
+.section {
+  padding: 60px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
   margin-bottom: 20px;
   color: #021123;
 }
 
-.hero p {
-  font-size: 24px;
-  max-width: 500px;
-  text-align: center;
+.section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
   color: #021123;
+}
+
+.contact-form {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 600px;
+}
+
+.contact-form h2 {
+  margin-top: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4783c7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #3564a8;
 }
 
 @media (max-width: 1200px) {
   .bouncing-blobs-glass {
     backdrop-filter: blur(120px);
     -webkit-backdrop-filter: blur(120px);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+  .nav-link {
+    margin: 5px 0;
   }
 }
 
@@ -133,32 +260,47 @@ body {
     font-size: 16px;
     padding: 0 20px;
   }
-}
 
-.tutorial-link a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: 600;
-  gap: 0 5px;
-  border: 2px solid;
-  border-radius: 5px;
-  padding: 4px 10px;
-}
-
-.tutorial-link svg {
-  width: 30px;
-}
-
-@media(max-width: 500px) {
-  .tutorial-link a {
-    font-size: 14px;
-    padding: 2px 4px;
+  .section h2 {
+    font-size: 28px;
   }
-  .tutorial-link svg {
-    width: 15px;
+
+  .section p {
+    font-size: 16px;
+  }
+
+  .contact-form h2 {
+    font-size: 24px;
+  }
+
+  .contact-form label {
+    font-size: 14px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 12px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+
+  .product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .product-item {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-weight: bold;
+    color: #021123;
   }
 }
