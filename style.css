@@ -255,12 +255,13 @@ ul {
 
 .navbar {
     background-color: transparent;
-    padding: 20px 0;
+    padding: 10px 0;
     transition: all 0.5s ease;
+    border-bottom: 1px solid #d5dee8;
 }
 
 .navbar.sticky {
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(13, 8, 8, 0.1);
     background-color: var(--main-color);
     padding: 10px 0;
 }
@@ -315,7 +316,6 @@ ul {
     min-height: 100vh;
     padding: 150px 0;
     background-color: var(--main-to-dark-color);
-    border-radius: 0 0 200px 0;
     position: relative;
     z-index: 1;
     overflow-x: hidden;
