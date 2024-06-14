@@ -337,24 +337,23 @@ ul {
 }
 
 .home-img img {
-    max-width: 250px;
+    max-width: 150px;
     width: 100%;
     box-shadow: var(--shadow-black-100);
-    border-radius: 32px;
-    animation: bounceTop_01 3s ease infinite;
+    border-radius: 50%;
+    animation:  3s ease infinite;
 }
 
 .home-img {
     position: relative;
-    margin-top: 50px ;
+    margin-top: 0px ;
 }
 
 .home-img .circle {
     position: absolute;
     z-index: 1;
-    
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     top: 50%;
@@ -363,15 +362,15 @@ ul {
 }
 
 .home-img .circle::before {
-    content: '';
+    content: 'NxZ';
     position: absolute;
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 30px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     left: 30px;
     top: 30px;
-    transform-origin: 170px 170px;
+    transform-origin: 120px 120px;
     animation: spin_01 10s linear infinite;
 }
 
@@ -379,69 +378,10 @@ ul {
     font-size: 85px;
     font-weight: 700px;
     color: #ffff;
-    margin: 0 0 20px;
+    margin-left: 80px;
     text-align: center;
 }
 
-
-
-.video-popup {
-    padding-top: 30px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1999;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5 ease;
-}
-
-.video-popup.open {
-    opacity: 1;
-    visibility: visible;
-}
-
-.video-popup .video-popup-close {
-    position: absolute;
-    right: 0;
-    top: -30px;
-    height: 30px;
-    width: 30px;
-    /* background-color: red; */
-    font-size: 16px;
-    text-align: center;
-    list-style: 30px;
-    cursor: pointer;
-    color: #fff;
-}
-
-.video-popup-inner {
-    width: 100%;
-    max-width: 900px;
-    background-color: red;
-    position: relative;
-}
-
-.video-popup .iframe-box {
-    height: 0;
-    overflow: hidden;
-    padding-top: 56.25%;
-}
-
-.video-popup #player-1 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
 
 
 /*----------------
