@@ -252,7 +252,7 @@ ul {
 
 .navbar .navbar-brand {
     font-size: 30px;
-    color: #fff;
+    color: black;
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -262,7 +262,7 @@ ul {
 }
 
 .navbar .nav-item .nav-link {
-    color: #fff;
+    color: black;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 400;
