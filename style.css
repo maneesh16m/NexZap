@@ -226,27 +226,7 @@ ul {
     Preloader
 **********************/
 
-.preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 2100;
-    background-color: var(--main-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.preloader span {
-    display: block;
-    height: 60px;
-    width: 60px;
-    background-color: var(--dark-to-main-color);
-    border-radius: 50%;
-    animation: zoomInOut_01 1s ease infinite;
-}
 
 
 /*----------------
