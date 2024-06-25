@@ -719,25 +719,7 @@ ul {
 Toggle Theme start ligt and dark mode
 ****************/
 
-.toggle-theme {
-    position: fixed;
-    right: 0;
-    top: 39%;
-    height: 40px;
-    width: 40px;
-    background-color: var(--dark-to-main-color);
-    z-index: 1200;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: var(--shadow-black-300);
-}
 
-.toggle-theme i {
-    line-height: 40px;
-}
 
 .bouncing-blob {
   width: 32vw;
