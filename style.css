@@ -181,16 +181,13 @@ ul {
 
 .section-title h2 {
     font-size: 40px;
-    color: var(--black-900);
+    color:black;
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
     margin: 0;
 }
 
-.section-title h2 span {
-    color: var(--main-color);
-}
 
 .owl-carousel .owl-dots {
     padding: 0 15px;
@@ -354,115 +351,6 @@ ul {
 
 
 
-/*----------------
-    Features section
--------------------*/
-
-.features .features-item {
-    box-shadow: var(--shadow-black-100);
-    margin: 15px;
-    padding: 30px;
-    height:80vh;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.features .features-item::before,
-.features .features-item::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    border-radius: 50%;
-    transition: all 0.5s ease;
-    opacity: 0;
-}
-
-.features .features-item::before {
-    height: 20px;
-    width: 20px;
-    background-color: var(--color-1);
-    left: -20px;
-    top: 40%;
-}
-
-.features .features-item:hover::before {
-    left: 10px;
-    opacity: 1;
-}
-
-.features .features-item::after {
-    height: 30px;
-    width: 30px;
-    background-color: var(--color-2);
-    right: -30px;
-    top: 80%;
-}
-
-.features .features-item:hover::after {
-    right: -15px;
-    opacity: 1;
-}
-
-.features .features-item .icon {
-    height: 60px;
-    width: 60px;
-    margin: 0 auto 30px;
-    text-align: center;
-    font-size: 30px;
-    color: var(--main-color);
-    position: relative;
-    z-index: 1;
-    transition: all 0.5s ease;
-}
-
-.features .features-item .icon::before {
-    content: '';
-    position: absolute;
-    left: 100%;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--main-color);
-    transition: all 0.5s ease;
-    z-index: -1;
-    opacity: 0;
-}
-
-.features .features-item:hover .icon::before {
-    left: 0;
-    border-radius: 60px;
-    opacity: 1;
-}
-
-.features .features-item:hover .icon {
-    color: #fff;
-    font-size: 20px;
-}
-
-.features .features-item .icon i {
-    line-height: 60px;
-}
-
-.features .features-item h3 {
-    font-size: 22px;
-    margin: 0 0 20px;
-    color: var(--black-900);
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-.features .features-item p {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300;
-    color: var(--black-400);
-    margin: 0 0 15px;
-}
-
-
 
 /*----------------
     App Download
@@ -477,7 +365,7 @@ ul {
     z-index: 1;
 }
 
-.app-download .section-title h2 {
+.app-download   {
     color: #fff;
 }
 
@@ -543,7 +431,7 @@ ul {
     width: 100%;
     left: 50%;
     top: 60px;
-    background-color: var(--main-color);
+    background-color: rgb(92, 198, 250);
     z-index: -1;
 }
 
@@ -809,7 +697,7 @@ Toggle Theme start ligt and dark mode
     -webkit-backdrop-filter: blur(90px);
   }
 
- 
+} 
 
 /* ********************
     Responsive
@@ -897,3 +785,4 @@ Toggle Theme start ligt and dark mode
         font-size: 30px;
     }
 }
+
