@@ -12,11 +12,6 @@
     /* #6b51f0*/
     /*a200ff*/
     --main-color: #111810;
-    --color-1: #e91e63;
-    --color-2: #f5ae10;
-    --color-3: #09d69c;
-    --bg-dark: #2b2c2f;
-    --main-to-dark-color: var(--main-color);
     --dark-to-main-color: var(--bg-dark);
     --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
     --shadow-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -179,14 +174,15 @@ ul {
     margin-bottom: 60px;
 }
 
-.section-title h2 {
+.section-title  h2{
     font-size: 40px;
-    color:black;
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
     margin: 0;
-}
+    color: white;
+    margin-bottom: 15px;
+}    
 
 
 .owl-carousel .owl-dots {
@@ -222,13 +218,14 @@ ul {
 
 .navbar {
     background-color: transparent;
+    background-color: #0a0909;
     padding: 10px 0;
     transition: all 0.5s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 4px rgba(248, 245, 245, 0.1); 
 }
 
 .navbar.sticky {
-    box-shadow: 0 10px 10px rgba(13, 8, 8, 0.1);
+    box-shadow: 0 10px 10px rgba(244, 242, 242, 0.1);
     background-color: var(--main-color);
     padding: 10px 0;
 }
@@ -239,7 +236,7 @@ ul {
 
 .navbar .navbar-brand {
     font-size: 30px;
-    color: black;
+    color: white;
     font-weight: 500;
     text-transform: capitalize;
 }
@@ -249,7 +246,7 @@ ul {
 }
 
 .navbar .nav-item .nav-link {
-    color: black;
+    color: white;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 400;
@@ -264,7 +261,7 @@ ul {
     bottom: 0;
     right: 0;
     height: 1px;
-    background-color: #fff;
+    background-color: #0a0909;
     transition: all 0.5s ease;
     transform: scale(0);
 }
@@ -282,7 +279,7 @@ ul {
 .home {
     min-height: 100vh;
     padding: 150px 0;
-    
+    background-color: black;
     position: relative;
     z-index: 1;
     overflow-x: hidden;
@@ -321,7 +318,7 @@ ul {
     z-index: 1;
     height: 300px;
     width: 300px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1.5px solid white;
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -333,7 +330,7 @@ ul {
     position: absolute;
     height: 30px;
     width: 30px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: white;
     border-radius: 50%;
     left: 30px;
     top: 30px;
@@ -344,7 +341,7 @@ ul {
 .home-text h1 {
     font-size: 85px;
     font-weight: 700px;
-    color: black;
+    color: white;
     margin-left: 80px;
     text-align: center;
 }
@@ -357,17 +354,14 @@ ul {
 -------------------*/
 
 .app-download {
-    background-image: url(../img/download-app-bg.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
+    background-color: black;
     z-index: 1;
 }
 
-.app-download   {
-    color: #fff;
-}
 
 .app-download::before {
     content: '';
@@ -377,7 +371,6 @@ ul {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: var(--main-to-dark-color);
     opacity: 0.6;
 }
 
@@ -412,74 +405,21 @@ ul {
     line-height: 26px;
 }
 
-
-/*----------------
-    How it works
--------------------*/
-
-.how-it-works-item {
-    padding: 30px;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+.about{
+    color:white;
+    background-color: black;
 }
-
-.how-it-works-item.line-right::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    left: 50%;
-    top: 60px;
-    background-color: rgb(92, 198, 250);
-    z-index: -1;
-}
-
-.how-it-works-item .step {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    background-color: var(--main-color);
-    font-size: 30px;
-    text-align: center;
-    line-height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    font-weight: 500;
-    margin: 0 0 15px;
-}
-
-.how-it-works-item h3 {
-    margin: 20px 0;
-    font-size: 22px;
-    font-weight: 500;
-    color: var(--black-900);
-    text-transform: capitalize;
-}
-
-.how-it-works-item p {
-    font-size: 16px;
-    font-weight: 300;
-    margin: 0;
-    color: var(--black-400);
-    line-height: 26px;
-}
-
-
-
-
-
 /*------------------------
    Get in touch section
 --------------------------*/
 
 .contact {
-    background-color: var(--black-100);
+    background-color: black;
 }
 
 .contact-info h3 {
     font-size: 22px;
-    color: var(--black-900);
+    color: white;
     font-weight: 500;
     margin: 0 0 40px;
 }
@@ -498,8 +438,8 @@ ul {
     top: 0;
     border-radius: 50%;
     font-size: 16px;
-    color: var(--main-color);
-    border: 1px solid var(--main-color);
+    color: white;
+    border: 1px solid white;
     text-align: center;
     line-height: 38px;
 }
@@ -508,7 +448,7 @@ ul {
     font-size: 18px;
     font-weight: 400;
     margin: 0 0 10px;
-    color: var(--black-900);
+    color: white;
 }
 
 .contact-info-item p {
@@ -516,7 +456,7 @@ ul {
     font-weight: 300;
     margin: 0;
     line-height: 26px;
-    color: var(--black-400);
+    color: white;
 }
 
 .contact-form .form-group {
@@ -603,7 +543,6 @@ ul {
 }
 
 
-/
 @media (max-width: 1200px) {
   .bouncing-blobs-glass {
     backdrop-filter: blur(120px);
@@ -671,18 +610,6 @@ ul {
     .home-text h1 {
         font-size: 40px;
     }
-    .pricing-plan,
-    .how-it-works-item,
-    .services-item {
-        margin-bottom: 30px;
-    }
-    .how-it-works-item.line-right::before {
-        content: none;
-    }
-    .how-it-works-item {
-        box-shadow: var(--shadow-black-100);
-        border-radius: 10px;
-    }
     .footer-col {
         margin-top: 30px;
     }
@@ -720,4 +647,9 @@ ul {
         font-size: 30px;
     }
 }
+
+
+
+
+
 
