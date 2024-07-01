@@ -225,8 +225,8 @@ ul {
 }
 
 .navbar.sticky {
-    box-shadow: 0 10px 10px rgba(244, 242, 242, 0.1);
-    background-color: var(--main-color);
+    box-shadow: 0 10px 10px black;
+    background-color: black;
     padding: 10px 0;
 }
 
