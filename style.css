@@ -221,7 +221,7 @@ ul {
     background-color: #0F1729;
     padding: 10px 0;
     transition: all 0.5s ease;
-    box-shadow: 0 2px 4px rgba(248, 245, 245, 0.1); 
+    box-shadow: 0 0px 0px rgba(248, 245, 245, 0.1); 
 }
 
 .navbar.sticky {
@@ -270,6 +270,7 @@ ul {
 .navbar .nav-item .nav-link:hover::before {
     transform: scale(1);
 }
+
 
 
 /*----------------
