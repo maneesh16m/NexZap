@@ -289,8 +289,9 @@ ul {
 
 .home {
     animation: none;
-    /*background-image: linear-gradient(90deg,#875ef6 0%,  35%,rgb(35, 54, 150));*/
-    background: linear-gradient(125deg,#84a1f8 0%, #32127d 25%,#132886);
+    /*background-image: linear-gradient(90deg,#875ef6 0%,  35%,rgb(35, 54, 150));
+    background: linear-gradient(125deg,#84a1f8 0%, #32127d 25%,#132886);*/
+    background-image: url('./background.jpg');
 }
 
 
@@ -411,7 +412,7 @@ ul {
 .button-wrapper button {
     display: block;
     width: 100%;
-    background: rgb(17, 107, 232);
+    background: #5da3f2 ;
     border: none;
     color: white;
     font: inherit;
@@ -422,7 +423,8 @@ ul {
 }
 
 .button-wrapper button:hover {
-    background-color: rgba(26, 241, 72, 0.979); /* Adjust hover effect as needed */
+    background-color: #3f7dc5;
+
 }
 
 
