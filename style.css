@@ -405,7 +405,7 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 14px 14px 0px 14px; /* Adjust padding inside button wrapper */
+    padding: 10px 14px 0px 14px; /* Adjust padding inside button wrapper */
 }
 
 .button-wrapper button {
@@ -416,7 +416,7 @@ ul {
     color: inherit;
     font: inherit;
     cursor: pointer;
-    padding: 20px;
+    padding: 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -670,12 +670,4 @@ ul {
     .section-title h2 {
         font-size: 30px;
     }
-}
-
-
-button{
-    width:320px;
-    background-color:green;
-    color: white;
-    border-color: 1px white;
 }
