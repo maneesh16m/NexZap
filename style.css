@@ -29,7 +29,6 @@ body {
     overflow-x: hidden;
     background-color: #fff;
     line-height: 1.5;
-    height: 2000px;
 }
 
 
@@ -69,28 +68,6 @@ ul {
 .btn-1:hover {
     color: #fff;
     background-color: var(--main-color);
-}
-
-.btn-2 {
-    background-color: var(--main-color);
-    padding: 12px 30px;
-    border: none;
-    border-radius: 30px;
-    color: #fff;
-    font-size: 16px;
-    text-transform: capitalize;
-    transition: all 0.5s ease;
-    box-shadow: var(--shadow-black-100);
-    font-weight: 500;
-}
-
-.btn-2:focus {
-    box-shadow: var(--shadow-black-100);
-}
-
-.btn-2:hover {
-    color: var(--main-color);
-    background-color: #fff;
 }
 
 @keyframes spin_01 {
@@ -235,6 +212,7 @@ ul {
     background-color: rgba(255, 255, 255, 0.6); /* Slightly less transparent when sticky */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
+
 }
 
 /* Container padding */
@@ -266,9 +244,7 @@ ul {
     font-weight: 400;
     padding: 5px 0;
     position: relative;
-    background: none; /* Remove background */
-    border: none; /* Remove border */
-    outline: none; /* Remove outline */
+    
 }
 
 /* Nav link hover and active states */
@@ -309,8 +285,6 @@ ul {
 }
 
 
-
-
 /*----------------
     Home Section
 -------------------*/
@@ -323,14 +297,6 @@ ul {
     z-index: 1;
     overflow-x: hidden;
 }
-
-
-/* .home {
-    animation: none;
-    background-image: linear-gradient(90deg,#875ef6 0%,  35%,rgb(35, 54, 150));
-    background: linear-gradient(125deg,#84a1f8 0%, #32127d 25%,#132886);
-    background-image: url('./background.jpg');
-} */
 
 
 img {
