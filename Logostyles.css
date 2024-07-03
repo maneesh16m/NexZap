@@ -1,0 +1,53 @@
+.bubble {
+    --_float-distance: -20px;
+    --_float-speed: 3000ms;
+    --_size: 400px; /* Corrected this line */
+
+    width: var(--_size);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: relative;
+    backdrop-filter: blur(5px);
+   
+    animation: floating var(--_float-speed) ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bubble::before,
+.bubble::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
+.bubble::before {
+    inset: 0;
+    backdrop-filter: blur(12px);
+    filter: blur(4px);
+}
+
+.bubble::after {
+    inset: -3px;
+    z-index: -1;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, var(--_float-distance));
+    }
+}
+
+.logo {
+    width: 100%; /* Adjust this value to increase the logo size */
+    height: auto;
+    left: 28px;
+    position: relative;
+    z-index: 1;
+    transform: translateX(-10%); /* Adjust this value to move the logo left */
+}
