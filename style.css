@@ -41,6 +41,7 @@ body {
 
 img {
     max-width: 100%;
+    size: 200px;
     vertical-align: middle;
 }
 
