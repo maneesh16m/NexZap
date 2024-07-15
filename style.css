@@ -300,8 +300,9 @@ ul {
 
 
 img {
-    max-width: 150px;
+    max-width: 80px;
     width: 100%;
+    background-color:rgba(255, 255, 255, 0.3); 
     box-shadow: var(--shadow-black-100);
     border-radius: 50%;
     animation:  3s ease infinite;
@@ -317,6 +318,30 @@ img {
 }
 
 
+.home .bubble {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.home .bubble img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-text {
+    padding-left: 50px;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+}
 
 
 /*----------------
@@ -350,7 +375,7 @@ img {
     color: white;
     padding: 30px;
     text-align: center;
-    height: 60vh;
+    height: fit-content;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust shadow properties as needed */
 }
 
