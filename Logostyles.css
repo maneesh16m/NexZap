@@ -46,7 +46,7 @@
     width: 100%; /* Adjust this value if necessary */
     height: auto; /* Ensures the height adjusts proportionally */
     left: 28px; /* Adjust this value to position the logo */
-    position: relative;
+    size: 100px;
     z-index: 1;
     transform: translateX(-10%); /* Adjust this value to move the logo left */
 }
