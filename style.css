@@ -302,10 +302,10 @@ ul {
 img {
     max-width: 80px;
     width: 100%;
-    background-color:rgba(255, 255, 255, 0.3); 
     box-shadow: var(--shadow-black-100);
     border-radius: 50%;
     animation:  3s ease infinite;
+    background-color: hide;
 }
 
 
@@ -334,11 +334,13 @@ img {
 }
 
 .home-text {
-    padding-left: 50px;
+    
+    text-align: end;
+    text-transform: uppercase;
 }
 
 .home-text h1 {
-    font-size: 48px;
+    font-size: 80px;
     font-weight: 700;
     color: #333;
 }
@@ -441,7 +443,6 @@ img {
 .contact {
     background-color: rgba(29, 40, 58, 1);
     border: solid 2px rgba(72, 86, 106, 1);
-    border-radius: 50px;
 }
 
 .contact-info h3 {

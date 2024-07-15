@@ -1,12 +1,12 @@
 .bubble {
     --_float-distance: -20px;
     --_float-speed: 3000ms;
-    --_size: 400px; /* Corrected this line */
+    --_size: 300px; /* Corrected this line */
 
     width: var(--_size);
     border-radius: 50%;
     position: relative;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     animation: floating var(--_float-speed) ease-in-out infinite;
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@
     width: 100%; /* Adjust this value if necessary */
     height: auto; /* Ensures the height adjusts proportionally */
     left: 28px; /* Adjust this value to position the logo */
-    size: 100px;
+    position: relative;
     z-index: 1;
     transform: translateX(-10%); /* Adjust this value to move the logo left */
 }
