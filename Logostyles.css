@@ -1,52 +1,56 @@
-.bubble {
-    --_float-distance: -20px;
-    --_float-speed: 3000ms;
-    --_size: 300px; /* Corrected this line */
-
-    width: var(--_size);
-    border-radius: 50%;
-    position: relative;
-    backdrop-filter: blur(2px);
-    animation: floating var(--_float-speed) ease-in-out infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-
-.bubble::before,
-.bubble::after {
-    content: "";
-    position: absolute;
-    border-radius: inherit;
-}
-
-.bubble::before {
-    inset: 0;
-    backdrop-filter: blur(12px);
-    filter: blur(4px);
-}
-
-.bubble::after {
-    inset: -3px;
-    z-index: -1;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: floating 3s ease-in-out infinite;
 }
 
 @keyframes floating {
-    0%, 100% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(0, var(--_float-distance));
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(
+      -18px
+    ); /* Adjust this value for the desired floating distance */
+  }
 }
 
 .logo {
-    width: 100%; /* Adjust this value if necessary */
-    height: auto; /* Ensures the height adjusts proportionally */
-    left: 28px; /* Adjust this value to position the logo */
-    position: relative;
-    z-index: 1;
-    transform: translateX(-10%); /* Adjust this value to move the logo left */
+  width: 200px; /* Base size for logo */
+  height: auto;
+}
+
+.home-text h1 {
+  font-size: 2.5rem; /* Base font size */
+  font-weight: bold;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  .logo {
+    width: 300px; /* Medium devices */
+  }
+  .home-text h1 {
+    font-size: 3.5rem; /* Medium devices */
+  }
+}
+
+@media (min-width: 992px) {
+  .logo {
+    width: 400px; /* Large devices */
+  }
+  .home-text h1 {
+    font-size: 4.5rem; /* Large devices */
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    width: 500px; /* Extra large devices */
+  }
+  .home-text h1 {
+    font-size: 5.5rem; /* Extra large devices */
+  }
 }
