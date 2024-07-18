@@ -295,56 +295,48 @@ ul {
     position: relative;
     z-index: 1;
     overflow-x: hidden;
-}
-
-
-.navbarimg {
+  }
+  
+  /* Navbar image styles */
+  .navbarimg {
     max-width: 100px;
-   
-img{
+  }
+  
+  .navbarimg img {
     width: 100%;
     box-shadow: var(--shadow-black-100);
-    animation:  3s ease infinite;
+    animation: 3s ease infinite;
     background-color: hide;
-}
-}
-
-.home-text h1 {
-    font-size: 85px;
-    font-weight: 700px;
-    color: black;
-    margin-left: 80px;
+  }
+  
+  /* Adjusting home text */
+  .home-text {
+    text-align: end;
+    text-transform: uppercase;
+  }
+  
+  .home-text h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 80px; /* Adjust this value to move the text */
     text-align: center;
-}
-
-
-.home .bubble {
+  }
+  
+  /* Bubble styling (if needed) */
+  .home .bubble {
     display: inline-block;
     position: relative;
     width: 400px;
     height: 400px;
     border-radius: 50%;
     overflow: hidden;
-}
-
-
-.home .bubble img {
+  }
+  
+  .home .bubble img {
     max-width: 100%;
     height: auto;
-}
-
-.home-text {
-    
-    text-align: end;
-    text-transform: uppercase;
-}
-
-.home-text h1 {
-    font-size: 80px;
-    font-weight: 700;
-    color: #333;
-}
-
+  }
 
 /*----------------
     App Download
